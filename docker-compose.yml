@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sockd:
+    build:
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 2020:2020
+    volumes:
+      - ./conf/sockd.passwd:/home/danted/conf/sockd.passwd
